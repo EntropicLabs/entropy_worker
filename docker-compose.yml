@@ -1,0 +1,14 @@
+version: '3.7'
+
+
+services:
+  worker:
+    image: entropiclabs/worker:latest
+    container_name: entropy-worker
+    restart: unless-stopped
+    environment:
+      - NETWORK=mainnet
+      - mnemonic.mainnet=${MAINNET_MNEMONIC}
+    volumes:
+      - ./data:/worker/data
+    network_mode: host

@@ -1,0 +1,8 @@
+{
+  "type": "Worker",
+  "registered_keys": [
+    ""
+  ],
+  "networks":{},
+  "default_network": null
+}
